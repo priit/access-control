@@ -13,5 +13,6 @@ end
 
 desc 'Custom git push deploy'
 task :push do
-  `git push origin master && git push github master`
+  `git push origin master`
+  `git push github master`
 end
